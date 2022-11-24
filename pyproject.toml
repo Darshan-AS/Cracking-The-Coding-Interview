@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "cracking-the-coding-interview"
+version = "0.1.0"
+description = "Python solutions to the popular 'Cracking The Coding Interview' book."
+authors = ["Darshan A S <itisdarshan@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "cracking_the_coding_interview" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+pep8 = "^1.7.1"
+rope = "^1.5.0"
+pylint = "^2.15.6"
+flake8 = "^6.0.0"
+bandit = "^1.7.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+skip-string-normalization = false
