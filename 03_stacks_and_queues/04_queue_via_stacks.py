@@ -2,15 +2,15 @@
 Queue via Stacks: Implement a MyQueue class which implements a queue using two stacks
 """
 import pytest
-from Stack import Stack
+from stack import Stack
 
 
 class QueueViaStacks:
     
     def __init__(self, capacity):
         self.capacity = capacity
-        self.add_stack = Stack(self.capacity)
-        self.delete_stack = Stack(self.capacity)
+        self.add_stack = Stack(capacity=self.capacity)
+        self.delete_stack = Stack(capacity=self.capacity)
     
     def __len__(self):
         return len(self.add_stack) + len(self.delete_stack)

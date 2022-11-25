@@ -4,7 +4,7 @@ of two nodes in a binary tree. Avoid storing additional nodes in a data structur
 necessarily a binary search tree.
 """
 
-from BinaryTree import BinaryTree
+from binary_tree import BinaryTree
 
 
 def first_common_ancestor(node_1, node_2):
@@ -28,13 +28,13 @@ def first_common_ancestor(node_1, node_2):
 
 
 def test_first_common_ancestor():
-    node_1 = BinaryTree(1)
-    node_3 = BinaryTree(3)
-    node_2 = BinaryTree(2, node_1, node_3)
-    node_5 = BinaryTree(5)
-    node_7 = BinaryTree(7)
-    node_6 = BinaryTree(6, node_5, node_7)
-    node_4 = BinaryTree(4, node_2, node_6)
+    node_1 = BinaryTree.Node(1)
+    node_3 = BinaryTree.Node(3)
+    node_2 = BinaryTree.Node(2, node_1, node_3)
+    node_5 = BinaryTree.Node(5)
+    node_7 = BinaryTree.Node(7)
+    node_6 = BinaryTree.Node(6, node_5, node_7)
+    node_4 = BinaryTree.Node(4, node_2, node_6)
     
     assert first_common_ancestor(node_1, node_2) == node_2
     assert first_common_ancestor(node_1, node_3) == node_2

@@ -11,7 +11,7 @@ Output: {2, 1, 3}, {2, 3, 1}
 """
 import pytest
 
-from BinarySearchTree import BinarySearchTree
+from binary_search_tree import BinarySearchTree
 
 
 def all_possible_bst_sequences_helper(prefix, sub_bsts):

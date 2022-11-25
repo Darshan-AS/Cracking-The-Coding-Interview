@@ -14,7 +14,7 @@ Output: 9 -> 1 -> 2. That is, 912.
 """
 import pytest
 
-from LinkedList import LinkedList
+from linked_list import LinkedList
 
 
 def sum_lists(ll1, ll2):

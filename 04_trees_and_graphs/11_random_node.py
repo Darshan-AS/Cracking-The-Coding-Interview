@@ -6,7 +6,7 @@ for getRandomNode, and explain how you would implement the rest of the methods.
 """
 from random import randint
 
-from BinaryTree import BinaryTree
+from binary_tree import BinaryTree
 
 
 class BinaryTreeExtended(BinaryTree):

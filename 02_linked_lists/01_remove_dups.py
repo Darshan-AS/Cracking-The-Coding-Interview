@@ -5,7 +5,7 @@ How would you solve this problem if a temporary buffer is not allowed?
 """
 import pytest
 
-from LinkedList import LinkedList
+from linked_list import LinkedList
 
 """
 Time:   O(N)

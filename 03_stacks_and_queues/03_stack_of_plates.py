@@ -9,7 +9,7 @@ FOLLOW UP
 Implement a function popAt (int index) which performs a pop operation on a specific sub-stack.
 """
 import pytest
-from Stack import Stack
+from stack import Stack
 
 
 class StackOfPlates:
@@ -20,7 +20,7 @@ class StackOfPlates:
     
     def push(self, value):
         if not self.stacks or self.stacks[-1].is_full():
-            self.stacks.append(Stack(self.each_stack_capacity))
+            self.stacks.append(Stack(capacity=self.each_stack_capacity))
         self.stacks[-1].push(value)
     
     def pop(self):
@@ -43,7 +43,7 @@ class StackOfPlates:
         if stack_number == len(self.stacks) - 1:
             return
         
-        reverse_stack = Stack(self.each_stack_capacity)
+        reverse_stack = Stack(capacity=self.each_stack_capacity)
         next_stack = self.stacks[stack_number + 1]
         while not next_stack.is_empty():
             reverse_stack.push(next_stack.pop())
@@ -74,3 +74,5 @@ def test_stack_of_plates():
     
     assert stack.pop_at(1) == 5
     assert stack.pop_at(0) == 3
+
+test_stack_of_plates()

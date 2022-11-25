@@ -6,7 +6,7 @@ linked list, then they are intersecting.
 """
 import pytest
 
-from LinkedList import LinkedList
+from linked_list import LinkedList
 
 
 def intersection(ll1, ll2):

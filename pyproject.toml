@@ -8,6 +8,7 @@ packages = [{ include = "cracking_the_coding_interview" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+pytest = "^7.2.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.10.0"

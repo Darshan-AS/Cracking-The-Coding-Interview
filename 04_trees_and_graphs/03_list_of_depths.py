@@ -3,8 +3,8 @@ List of Depths: Given a binary tree, design an algorithm which creates a linked 
 at each depth (e.g., if you have a tree with depth D, you'll have D linked lists).
 """
 
-from BinaryTree import BinaryTree
-from LinkedList import LinkedList
+from binary_tree import BinaryTree
+from linked_list import LinkedList # FIX: Import error
 
 
 def list_of_depth(root):

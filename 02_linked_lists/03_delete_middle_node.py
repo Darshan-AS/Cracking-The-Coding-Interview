@@ -8,7 +8,7 @@ Result: nothing is returned, but the new linked list looks like a->b->d->e->f
 """
 import pytest
 
-from LinkedList import LinkedList
+from linked_list import LinkedList
 
 
 def delete_middle_node(kth_node):

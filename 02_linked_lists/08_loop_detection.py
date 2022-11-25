@@ -10,7 +10,7 @@ Output: C
 """
 import pytest
 
-from LinkedList import LinkedList
+from linked_list import LinkedList
 
 
 def loop_detection(ll):

@@ -3,7 +3,7 @@ Return Kth to Last: Implement an algorithm to find the kth to last element of a 
 """
 import pytest
 
-from LinkedList import LinkedList
+from linked_list import LinkedList
 
 
 def return_kth_to_last(ll, k):

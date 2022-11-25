@@ -9,7 +9,7 @@ Output: 3 -> 1 -> 2 -> 10 -> 5 -> 5 -> 8
 """
 import pytest
 
-from LinkedList import LinkedList
+from linked_list import LinkedList
 
 
 def partition(ll, x):

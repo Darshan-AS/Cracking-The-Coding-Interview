@@ -17,7 +17,6 @@ import math
 
 import pytest
 
-
 def count_eval(expression, result, memo=None):
     # Calculates total number of ways to add parenthesis
     def catalan_number(n):
@@ -46,7 +45,7 @@ def count_eval(expression, result, memo=None):
             true_ways += count_eval(left, True) * count_eval(right, False)
             true_ways += count_eval(left, False) * count_eval(right, True)
     
-    total_ways = catalan_number((len(expression) - 1) / 2)
+    total_ways = catalan_number((len(expression) - 1) // 2)
     false_ways = total_ways - true_ways
     memo[expression] = (false_ways, true_ways)
     

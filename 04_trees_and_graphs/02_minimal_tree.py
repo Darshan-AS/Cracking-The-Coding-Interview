@@ -4,7 +4,7 @@ write an algorithm to create a binary search tree with minimal height.
 """
 import pytest
 
-from BinarySearchTree import BinarySearchTree
+from binary_search_tree import BinarySearchTree
 
 
 def minimal_tree(sorted_list):

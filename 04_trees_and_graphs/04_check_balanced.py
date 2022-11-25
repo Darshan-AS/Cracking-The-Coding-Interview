@@ -5,7 +5,7 @@ node never differ by more than one.
 """
 import pytest
 
-from BinaryTree import BinaryTree
+from binary_tree import BinaryTree
 
 
 def check_balanced(node):
@@ -21,10 +21,9 @@ def check_balanced(node):
 
 
 @pytest.mark.parametrize('binary_tree, expected', [
-    (BinaryTree(1), (True, 0)),
-    (BinaryTree(1, BinaryTree(2, BinaryTree(4), BinaryTree(5)),
-                BinaryTree(3, BinaryTree(6), BinaryTree(7, BinaryTree(8)))), (True, 3)),
-    (BinaryTree(1, BinaryTree(2, BinaryTree(3, BinaryTree(4))), BinaryTree(5)), (False, 3))
+    (BinaryTree.Node(1), (True, 0)),
+    (BinaryTree.Node(1, BinaryTree.Node(2, BinaryTree.Node(4), BinaryTree.Node(5)), BinaryTree.Node(3, BinaryTree.Node(6), BinaryTree.Node(7, BinaryTree.Node(8)))), (True, 3)),
+    (BinaryTree.Node(1, BinaryTree.Node(2, BinaryTree.Node(3, BinaryTree.Node(4))), BinaryTree.Node(5)), (False, 3))
 ])
 def test_check_balanced(binary_tree, expected):
     assert check_balanced(binary_tree) == expected

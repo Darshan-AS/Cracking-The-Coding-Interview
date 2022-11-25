@@ -12,7 +12,7 @@ Output: f, e, a, b, d, c
 
 import pytest
 
-from Graph import Graph
+from graph import Graph
 
 
 def build_order(projects, dependencies):

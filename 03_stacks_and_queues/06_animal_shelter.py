@@ -9,7 +9,7 @@ and dequeueCat. You may use the built-in Linked list data structure.
 from time import time
 
 import pytest
-from Queue import Queue
+from queue import Queue
 
 
 class Animal:

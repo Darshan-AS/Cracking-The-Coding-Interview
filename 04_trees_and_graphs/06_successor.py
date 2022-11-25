@@ -3,7 +3,7 @@ Successor: Write an algorithm to find the "next" node (i.e., in-order successor)
 binary search tree. You may assume that each node has a link to its parent.
 """
 
-from BinarySearchTree import BinarySearchTree
+from binary_search_tree import BinarySearchTree
 
 
 def successor(node):

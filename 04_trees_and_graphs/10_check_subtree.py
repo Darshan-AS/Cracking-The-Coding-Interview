@@ -6,7 +6,7 @@ That is, if you cut off the tree at node n, the two trees would be identical.
 """
 import pytest
 
-from BinaryTree import BinaryTree
+from binary_tree import BinaryTree
 
 
 def match_tree(t1, t2):
@@ -28,13 +28,13 @@ def is_sub_tree(large_tree, small_tree):
 
 
 @pytest.mark.parametrize('large_tree, small_tree, expected_is_sub_tree', [
-    (BinaryTree(5, BinaryTree(3, BinaryTree(2), BinaryTree(4)),
-                BinaryTree(8, BinaryTree(7, BinaryTree(9)), BinaryTree(1))),
-     BinaryTree(8, BinaryTree(7), BinaryTree(1)),
+    (BinaryTree.Node(5, BinaryTree.Node(3, BinaryTree.Node(2), BinaryTree.Node(4)),
+                BinaryTree.Node(8, BinaryTree.Node(7, BinaryTree.Node(9)), BinaryTree.Node(1))),
+     BinaryTree.Node(8, BinaryTree.Node(7), BinaryTree.Node(1)),
      False),
-    (BinaryTree(5, BinaryTree(3, BinaryTree(2), BinaryTree(4)),
-                BinaryTree(8, BinaryTree(7, BinaryTree(9)), BinaryTree(1))),
-     BinaryTree(8, BinaryTree(7, BinaryTree(9)), BinaryTree(1)),
+    (BinaryTree.Node(5, BinaryTree.Node(3, BinaryTree.Node(2), BinaryTree.Node(4)),
+                BinaryTree.Node(8, BinaryTree.Node(7, BinaryTree.Node(9)), BinaryTree.Node(1))),
+     BinaryTree.Node(8, BinaryTree.Node(7, BinaryTree.Node(9)), BinaryTree.Node(1)),
      True)
 ])
 def test_is_sub_tree(large_tree, small_tree, expected_is_sub_tree):

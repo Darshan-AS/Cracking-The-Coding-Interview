@@ -6,7 +6,7 @@ given value. The path does not need to start or end at the root or a leaf, but i
 """
 from collections import defaultdict
 
-from BinaryTree import BinaryTree
+from binary_tree import BinaryTree
 
 
 def paths_with_sum_helper(node, target_sum, running_sum, running_sum_map):

@@ -1,7 +1,7 @@
 """
 Route Between Nodes: Given a directed graph, design an algorithm to find out whether there is a route between two nodes.
 """
-from Graph import Graph
+from graph import Graph
 
 
 def route_between_nodes(graph, source, destination):
